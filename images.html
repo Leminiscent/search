@@ -1,22 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <title>Google Search</title>
+    <title>Google Image Search</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <nav>
-        <a href="images.html">Image Search</a> |
+        <a href="index.html">Google Search</a> | 
         <a href="advanced.html">Advanced Search</a>
     </nav>
     <form action="https://www.google.com/search" method="get">
-        <input type="text" name="q" placeholder="Search Google">
-        <input type="submit" value="Google Search">
-        <input type="submit" name="btnI" value="I'm Feeling Lucky">
+        <input type="hidden" name="tbm" value="isch">
+        <input type="text" name="q" placeholder="Search Images">
+        <input type="submit" value="Search Images">
     </form>
 </body>
-
 </html>
