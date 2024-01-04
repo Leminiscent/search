@@ -1,0 +1,75 @@
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* Center align elements */
+}
+
+/* Navigation bar */
+nav {
+    text-align: right;
+    padding: 10px 20px;
+    background-color: #f2f2f2;
+}
+
+nav a {
+    text-decoration: none;
+    color: #1a0dab;
+    margin-left: 10px;
+}
+
+/* Form styling */
+form {
+    margin-top: 100px;
+}
+
+input[type="text"] {
+    width: 400px;
+    height: 30px;
+    margin-top: 20px;
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    /* Rounded corners */
+}
+
+input[type="submit"] {
+    width: 120px;
+    height: 36px;
+    margin-top: 20px;
+    margin-left: 5px;
+    border: 1px solid #f2f2f2;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    cursor: pointer;
+    /* Cursor changes to pointer on hover */
+}
+
+/* Advanced Search Form */
+form input[type="text"] {
+    width: 80%;
+    /* Adjust width for advanced search */
+    margin-bottom: 10px;
+    /* Space between fields */
+}
+
+/* Hover effect for buttons */
+input[type="submit"]:hover {
+    background-color: #e8e8e8;
+}
+
+/* "I'm Feeling Lucky" button style (if you want to differentiate it) */
+input[name="btnI"] {
+    background-color: #4285f4;
+    color: white;
+}
+
+/* Responsive design: Adjusts layout for smaller screens */
+@media screen and (max-width: 600px) {
+    input[type="text"] {
+        width: 90%;
+    }
+}
