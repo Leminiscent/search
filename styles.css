@@ -1,84 +1,69 @@
 /* styles.css */
-
-/* General body styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    text-align: center;
-    /* Center align elements */
+    background: #f8f9fa;
 }
 
-/* Navigation bar */
-nav {
-    text-align: right;
+.navbar {
+    padding: 1rem;
+}
+
+.nav-link {
+    color: #5f6368;
+    margin-right: 15px;
+    /* Spacing between navbar links */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.form-inline {
+    width: 100%;
+    max-width: 600px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control {
     padding: 10px 20px;
-    background-color: #f2f2f2;
 }
 
-nav a {
-    text-decoration: none;
-    color: #1a0dab;
-    margin-left: 20px;
-    /* Increased spacing */
-}
-
-/* Form styling */
-form {
-    margin-top: 100px;
-    position: relative;
-    /* To position the buttons */
-}
-
-input[type="text"] {
-    width: 400px;
-    height: 30px;
-    margin-top: 20px;
-    padding: 5px;
-    font-size: 16px;
-    border: 1px solid #dcdcdc;
-    border-radius: 20px;
-    /* Rounded corners */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-/* General styling for buttons */
-form input[type="submit"] {
-    width: 120px;
-    height: 36px;
+.btn {
+    padding: 10px 20px;
     border-radius: 4px;
-    cursor: pointer;
-    display: inline-block;
-    /* Align buttons inline */
-    margin: 20px 5px 0;
-    /* Adjust margin for spacing */
+    /* Slightly rounded corners for buttons */
 }
 
-.gray-btn {
-    border: 1px solid #f2f2f2;
-    background-color: #f8f9fa;
+.btn-outline-secondary {
+    border-color: #dfe1e5;
+    color: #5f6368;
 }
 
-/* Specific style for 'I'm Feeling Lucky' and 'Advanced Search' buttons */
-.blue-btn {
-    background-color: #4285f4;
-    /* Blue background */
+.btn-primary {
+    background-color: #1a73e8;
+    border-color: #1a73e8;
     color: white;
-    /* White text */
-    border: none;
 }
 
-/* Responsive design: Adjusts layout for smaller screens */
-@media screen and (max-width: 600px) {
-    input[type="text"] {
-        width: 90%;
-    }
+/* Advanced Search Page */
+.advanced-search-container {
+    margin: 20px;
+}
 
-    /* Adjust button size for smaller screens */
-    form input[type="submit"] {
-        width: 100px;
-        margin: 10px 5px 0;
-    }
+.advanced-form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.advanced-form-group label {
+    margin-right: 10px;
+    flex-basis: 30%;
+    /* Fixed width for labels */
 }

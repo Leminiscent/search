@@ -4,20 +4,24 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <title>Google Search</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <a href="images.html">Image Search</a>
-        <a href="advanced.html">Advanced Search</a>
+    <nav class="navbar navbar-light bg-light justify-content-end">
+        <a class="nav-link" href="images.html">Image Search</a>
+        <a class="nav-link" href="advanced.html">Advanced Search</a>
     </nav>
-    <form action="https://www.google.com/search" method="get">
-        <input type="text" name="q" placeholder="Search Google">
-        <input type="submit" class="gray-btn" value="Google Search">
-        <input type="submit" class="blue-btn" value="I'm Feeling Lucky">
-    </form>
+    <div class="container text-center mt-5">
+        <form action="https://www.google.com/search" method="get" class="form-inline justify-content-center">
+            <input type="text" name="q" class="form-control mb-2 mr-sm-2" placeholder="Search Google">
+            <button type="submit" class="btn btn-outline-secondary mb-2">Google Search</button>
+            <button type="submit" class="btn btn-primary mb-2">I'm Feeling Lucky</button>
+        </form>
+    </div>
 </body>
 
 </html>
