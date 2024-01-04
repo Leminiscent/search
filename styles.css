@@ -1,3 +1,5 @@
+/* styles.css */
+
 /* General body styling */
 body {
     font-family: Arial, sans-serif;
@@ -17,12 +19,15 @@ nav {
 nav a {
     text-decoration: none;
     color: #1a0dab;
-    margin-left: 10px;
+    margin-left: 20px;
+    /* Increased spacing */
 }
 
 /* Form styling */
 form {
     margin-top: 100px;
+    position: relative;
+    /* To position the buttons */
 }
 
 input[type="text"] {
@@ -34,42 +39,46 @@ input[type="text"] {
     border: 1px solid #dcdcdc;
     border-radius: 20px;
     /* Rounded corners */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-input[type="submit"] {
+/* General styling for buttons */
+form input[type="submit"] {
     width: 120px;
     height: 36px;
-    margin-top: 20px;
-    margin-left: 5px;
-    border: 1px solid #f2f2f2;
-    background-color: #f8f9fa;
     border-radius: 4px;
     cursor: pointer;
-    /* Cursor changes to pointer on hover */
+    display: inline-block;
+    /* Align buttons inline */
+    margin: 20px 5px 0;
+    /* Adjust margin for spacing */
 }
 
-/* Advanced Search Form */
-form input[type="text"] {
-    width: 80%;
-    /* Adjust width for advanced search */
-    margin-bottom: 10px;
-    /* Space between fields */
+.gray-btn {
+    border: 1px solid #f2f2f2;
+    background-color: #f8f9fa;
 }
 
-/* Hover effect for buttons */
-input[type="submit"]:hover {
-    background-color: #e8e8e8;
-}
-
-/* "I'm Feeling Lucky" button style (if you want to differentiate it) */
-input[name="btnI"] {
+/* Specific style for 'I'm Feeling Lucky' and 'Advanced Search' buttons */
+.blue-btn {
     background-color: #4285f4;
+    /* Blue background */
     color: white;
+    /* White text */
+    border: none;
 }
 
 /* Responsive design: Adjusts layout for smaller screens */
 @media screen and (max-width: 600px) {
     input[type="text"] {
         width: 90%;
+    }
+
+    /* Adjust button size for smaller screens */
+    form input[type="submit"] {
+        width: 100px;
+        margin: 10px 5px 0;
     }
 }
