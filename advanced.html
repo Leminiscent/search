@@ -10,12 +10,17 @@
 </head>
 
 <body>
+    <!-- Navigation bar with link to the main search page -->
     <nav class="navbar navbar-light bg-light justify-content-end">
         <a class="nav-link" href="index.html">Google Search</a>
     </nav>
+    <!-- Container for advanced search options -->
     <div class="advanced-search-container mt-5">
+        <!-- Header for advanced search section -->
         <h2 class="header-left-align">Find pages with...</h2>
+        <!-- Advanced search form with action pointing to Google's search -->
         <form action="https://www.google.com/search" method="get">
+            <!-- Various inputs for specifying advanced search criteria -->
             <div class="advanced-form-group">
                 <label for="all-words">all these words:</label>
                 <input type="text" id="all-words" name="as_q" class="form-control">
@@ -32,6 +37,7 @@
                 <label for="none-words">none of these words:</label>
                 <input type="text" id="none-words" name="as_eq" class="form-control">
             </div>
+            <!-- Button to submit the advanced search form -->
             <div class="d-flex justify-content-end">
                 <button type="submit" class="btn btn-primary">Advanced Search</button>
             </div>

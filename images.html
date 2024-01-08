@@ -10,13 +10,19 @@
 </head>
 
 <body>
+    <!-- Navigation bar with link to the main search page -->
     <nav class="navbar navbar-light bg-light justify-content-end">
         <a class="nav-link" href="index.html">Google Search</a>
     </nav>
+    <!-- Main container for the image search form -->
     <div class="container text-center mt-5">
+        <!-- Image search form with action pointing to Google's image search -->
         <form action="https://www.google.com/search" method="get" class="form-inline justify-content-center">
+            <!-- Hidden input specifying image search -->
             <input type="hidden" name="tbm" value="isch">
+            <!-- Text input for image search query -->
             <input type="text" name="q" class="form-control mb-2 mr-sm-2" placeholder="Search Images">
+            <!-- Button to initiate search -->
             <button type="submit" class="btn btn-primary mb-2">Search Images</button>
         </form>
     </div>
